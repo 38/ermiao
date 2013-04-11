@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Registration</title>
+		<script src="/static/jquery-1.9.1.min.js" > </script>
+		<script src="/static/md5.js"> </script>
+		<script src="/static/register.js"> </script>
+	</head>
+	<body>
+		<form id="reg" method="post" action="/do_reg">
+			<table>
+				<tr>
+					<td>Nickname</td>
+					<td><input type="text" id="nickname" name="nickname"></input></td>
+					<td id="nickname_info"> </td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" id="email" name="email"></input></td>
+					<td id="email_info"> </td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" id="password" name="password"></input></td>
+					<td id="password_info"> </td>
+				</tr>
+				<tr>
+					<td>Comfirm Password</td>
+					<td><input type="password" id="confirmpwd" name="confirmpwd"></input></td>
+					<td id="confirmpwd_info"> </td>
+				</tr>
+				<tr>
+					<td>
+						<input id="submit" type=submit></input>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
