@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>碎碎念 | 鸸鹋动物园</title>
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/base.css?v=20130204" />
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/zoo.css?v=20130310" />
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/beatie.css" />
+	<link rel="stylesheet" href="http://www.ermiao.com/media/css/solutions.css?v=20130310" />
+	<link rel="stylesheet" href="/preview.css" />
+    <link rel="icon" href="http://www.ermiao.com/media/favicon.ico" />
+    <script type="text/javascript" src="http://www.ermiao.com/media/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://www.ermiao.com/media/js/site.js?20130219"></script>
+    <script type="text/javascript" src="/ajaxfileupload.js"></script> 
+    <script type="text/javascript" src="/preview.js"></script> 
+  </head>
+
+  <body>
+    
+  
+<div id="header">
+  <div class="header">
+    <div id="menu">
+      <h1 class="index"><a href="/">鸸鹋动物园</a></h1>
+      <div class="reg-login">
+        
+		  hi, <a href="/mine">{{NickName}}</a>
+          [<a href="/notifications" title="未读提醒">0</a>]
+          /
+           
+            <a href="/accounts/settings"> 设置 </a>
+           
+          <span class="f-9">/</span> 
+          <a href="/logout">退出</a>
+        
+      </div>
+      <ul class="menu">
+        <li><a href="/" class="btn-mm"><span>首页</span></a></li>
+        <li><a href="/talk/" class="btn-m"><span>碎碎念</span></a></li>
+        <li><a href="/events/" class="btn-mm"><span>比比看</span></a></li>
+        <li><a href="/sharing/" class="btn-mm"><span>小市场</span></a></li>
+				<li><a href="/go/" class="btn-mm"><span>去哪儿</span></a></li>
+        
+        <li><a href="/waterfall" class="btn-mm"><span>精选集</span></a></li>
+        <li><a href="http://daily.ermiao.com/" class="btn-mm"><span>新鲜事</span></a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div>
+
+
+
+    
+  <div id="main" class="clearfix">
+    <div id="content" class="w-s10">
+      <div class="content talk">
+        
+          <h1 class="title">动物园里的碎碎念</h1>
+        
+        <div class="player clearfix">
+          <div class="group">
+            
+              <a href="/talk/my" class="btn-s"> <span>我家娃的碎碎念</span> </a>
+            
+          </div>
+          <span class="thisis b-l f-red">
+            
+              <a href="#" id="cur-pet-img"> </a>
+              确认代表
+              <a id="cur-pet-name" class="pet-name f-14" href="#"></a>
+              发布碎碎念？
+            
+          </span>
+          <div class="mypets b-r">
+            <span class="b-l">点击头像选择家里其他的娃：</span>
+            
+              <a class="pet" rel="517cd46c82c2ad0dc5000a41" href="#">
+                <img src="http://www.ermiao.com/media/uploads/avatar/227e5a2ce69a4f618bc3c6077d30d07b_resized.jpg" width="30" height="30" title="test"/>
+              </a>
+            
+          </div>
+        </div>
+        <form id="talk_form" action="/talk/" enctype="multipart/form-data" method="post"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='5c533dbb4a208945be98b0bfbddad618' /></div>
+          
+          <textarea name="text" cols="" rows="" class="comment"></textarea>
+          <div class="clear"></div>
+          <div class="f-gray filename">&nbsp;</div>
+          <span class="em-file info-s"> 
+            <a href="javascript:void(0);" class="up-pic">上传</a>
+            <span class="b-r f-snow">今天家里的娃有什么新鲜事儿？</span> 
+          </span> 
+          <span class="b-r"> 
+            <span class="f-gray">同步到我的社交网络</span>
+            <input checked="checked" type="checkbox" name="sns" id="id_sns" />
+            
+              <a href="#" class="btn-g w-z5 link_submit"><span>这就发布</span></a>
+            
+          </span> 
+          
+            <input type="hidden" name="pet_id" id="id_pet_id" />
+          
+			<input type="hidden" name="pet_name" id="id_pet_name" />
+
+			<input type="hidden" name="image_id" id="id_img_id" />
+          
+		</form>
+		<form id="image_form" action="/upload_preview" method="post" enctype="multipart/form-data">
+			<input name="image" id="image_filename" type="file" style="opacity:0; margin-top: -25px; cursor: pointer;"/>
+			<!-- <input type="submit"/> -->
+		</form>
+		<span id='preview'></span>
+      </div>
+
+      <div class="pet-timeline">
+        
+      </div>
+      
+    </div>
+    <div id="sidebar" class="w-s10">
+      
+<div class="pet-file clearfix"> 
+  <span class="arrow">◆</span> 
+  <img class="avatar" src="http://www.ermiao.com/media/img/avatar.png" width="50"/>
+  <a href="/u/5165828582c2ad69250000be" class="user-name">{{NickName}}</a><br />
+   
+  入驻于 <span class="time">2013.4.10</span>
+  <div class="intro"><span class="f-snow">＾</span></div>
+</div>
+
+      
+      <div class="sidebar-item">
+        <h3>我的关注 <span class="f-gray f-9">(1)</span></h3>
+        <ul class="active-fans clearfix">
+            <li>
+              <a href="/pet/517ccfe282c2ad0dc0000c42">
+                <img src="http://www.ermiao.com/media/uploads/avatar/e8a73440de864d14bce86621e276ff6b_resized.jpg" width="30" height="30" title="花生"/>
+              </a>
+            </li> 
+        </ul>
+	</div>
+
+	{% if IsAdmin %}
+	<div class="sidebar-tem">
+		<h3> SNS动态 </h3>
+		<ul id="id_sns_status">
+		</ul>
+	</div>
+	{% end %}
+
+
+</div>
+ 
+ </div>
+
+
+		
+			<div id="footer-s"> Copyright © ermiao.com 2008-2013 / 京ICP备08105426号 </div>
+
+		
+
+    
+
+    
+    
+  <script type="text/javascript">
+    $(function () {
+      (function (frm) {
+          var pet = $('.pet'),
+          text = frm.find(':input[name=text]');
+
+          pet.click(function (evt) {
+            evt.preventDefault();
+
+            var pet_id = this.rel,
+            pet_name = $(this).find('img').attr('title');
+
+            $('#cur-pet-name').text(pet_name);
+
+            frm.find('input[name=pet_id]').val(this.rel);
+            frm.find('input[name=pet_name]').val(pet_name);
+            var img = '<img src="' + $(this).find('img').attr('src') + '" width="40" />';
+            $('#cur-pet-img').html(img);
+            selectItem($(this));
+            return false;
+          });
+
+          function selectItem(item) {
+            item.parents('.mypets').find('.pet .this').removeClass('this');
+            item.find('img').addClass('this');
+          }
+
+          $('.pet:first').click();
+      })($('#talk_form'));
+
+	  $('#image_form input[type=file]').change(on_image_file_selected);
+
+      $('.use-smilies').click(function () {
+        $("#sm-file").toggle(250);
+        return true;
+      });
+	});
+{% if IsAdmin %}
+$(document).ready(function(){
+	var check_sns = function(){
+		$.ajax({
+			url:'/sns_status',
+			type: 'get',
+			data: 'num=10',
+			success: function(data){
+				var result = JSON.parse(data);
+				if(typeof(result.error) == "undefined" || result.error != 0){
+					$('#id_sns_status').html(".....");
+				} else {
+					var strbuf = "";
+					for(idx in result.info){
+						item = result.info[idx];
+						strbuf += "<li>" + item.user + "在SNS上分享了状态<a href=\'" +
+								  item.url + "\'>" + item.url + "</a></li>"
+					}
+					$('#id_sns_status').html(strbuf);
+				}
+			}
+		})
+		setTimeout(check_sns, 3000);
+	}
+	setTimeout(check_sns, 0);
+
+});
+{% end %}
+  </script>
+
+
+    
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26973117-1']);
+        _gaq.push(['_trackPageview']);
+        
+        _gaq.push(['_setCustomVar', 1, 'UserRole', 'Member', 1 ]);
+        
+        
+  
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+    <!--[if IE 6]> <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script> <![endif]-->
+    <!--[if IE]> 
+      <script type="text/javascript">
+        function resizeBody() {
+          if ($(window).width() <= 980) {
+            $('body').css('width', '980px');
+          } else {
+            $('body').css('width', '100%');
+          }
+        }
+        $(window).resize(function(){
+          resizeBody();
+        });
+      </script>
+    <![endif]-->
+  </body>
+</html>

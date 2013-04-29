@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>鸸鹋动物园·beta </title>
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/base.css?v=20130204" />
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/zoo.css?v=20130310" />
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/beatie.css" />
+    <link rel="stylesheet" href="http://www.ermiao.com/media/css/solutions.css?v=20130310" />
+    <link rel="icon" href="http://www.ermiao.com/media/favicon.ico" />
+    <script type="text/javascript" src="http://www.ermiao.com/media/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://www.ermiao.com/media/js/site.js?20130219"></script>
+    
+    
+  </head>
+
+  <body>
+    
+      
+<div id="header-index">
+  <div class="header">
+    <div id="menu">
+      <h1 class="index"><a href="/">鸸鹋动物园</a></h1>
+      <div class="reg-login">
+        
+          <a href="/accounts/signup">注册</a> 
+          <span class="f-9">/</span> 
+          <a href="/accounts/login">登录</a>
+        
+      </div>
+      <ul class="menu">
+        <li><a href="/" class="btn-m"><span>首页</span></a></li>
+        <li><a href="/talk/" class="btn-mm"><span>碎碎念</span></a></li>
+        <li><a href="/events/" class="btn-mm"><span>比比看</span></a></li>
+        <li><a href="/sharing/" class="btn-mm"><span>小市场</span></a></li>
+				<li><a href="/go/" class="btn-mm"><span>去哪儿</span></a></li>
+        
+        <li><a href="/waterfall" class="btn-mm"><span>精选集</span></a></li>
+        <li><a href="http://daily.ermiao.com/" class="btn-mm"><span>新鲜事</span></a></li>
+      </ul>
+    </div>
+    
+      <div class="header-index-bottom"></div>
+    
+  </div>
+</div>
+
+    
+
+    
+  <div id="main-index" class="welcome">
+    <div class="content-s login clearfix">
+		<h2 class="title">哈罗，欢迎回到鸸鹋动物园</h2>
+      <div class="openreg-l">
+        <div class="info-box clearfix no">
+          <p class="boxz">如果你有入场券的话...<span class="b-r f-12">还没有入场券？<a href="/accounts/register">点这里</a></span></p>
+        </div>
+
+        <form action="/accounts/login?next=/" method="post"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='5c533dbb4a208945be98b0bfbddad618' /></div>
+          
+
+			{{error_msg}}
+
+
+
+
+<div class="info-box">
+    <span class="f-r f-gray">邮箱</span>
+    <input id="id_email" type="text" class="input-s" name="email" />
+    
+    <span class="info-s">邮箱就是你的账户</span>
+    
+</div>
+
+
+
+
+
+<div class="info-box">
+    <span class="f-r f-gray">密码</span>
+    <input id="id_password" type="password" class="input-s" name="password" maxlength="18" />
+    
+    <span class="info-s">输入密码</span>
+    
+</div>
+
+
+
+
+
+
+          <div class="btn-box">
+            <a href="#" class="btn-o link_submit"><span>登录</span></a>
+            &raquo; <a href="/accounts/forgot">不幸丢了入场券的密码？</a>
+          </div>
+        </form>
+      </div>
+      <div class="openreg-r">
+        <p class="f-brown">你也可以直接：</p>
+        <a class="api-weibo" href="/social/login/weibo/">通过微博登录完成注册</a>
+        <a class="api-douban" href="/social/login/douban2/">通过豆瓣登录完成注册</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-top"></div>
+
+
+		
+			<div id="footer-s"> Copyright © ermiao.com 2008-2013 / 京ICP备08105426号 </div>
+
+		
+
+    
+
+    
+    
+
+    
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26973117-1']);
+        _gaq.push(['_trackPageview']);
+        
+        _gaq.push(['_setCustomVar', 1, 'UserRole', 'Visitor', 1 ]);
+        
+         
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+    <!--[if IE 6]> <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script> <![endif]-->
+    <!--[if IE]> 
+      <script type="text/javascript">
+        function resizeBody() {
+          if ($(window).width() <= 980) {
+            $('body').css('width', '980px');
+          } else {
+            $('body').css('width', '100%');
+          }
+        }
+        $(window).resize(function(){
+          resizeBody();
+        });
+      </script>
+    <![endif]-->
+  </body>
+</html>
